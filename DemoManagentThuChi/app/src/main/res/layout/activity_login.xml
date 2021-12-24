@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3399ff"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="310px"
+        android:layout_height="310px"
+        app:srcCompat="@drawable/heo" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:textColorHint="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_Email"
+            android:drawableLeft="@drawable/ic_username"
+            android:drawablePadding="5dp"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:backgroundTint="#fff"
+            android:text="admin"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:hint="Email" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColorHint="#fff"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_Password"
+            android:drawablePadding="5dp"
+            android:inputType="textPassword"
+            android:backgroundTint="#fff"
+            android:textColor="#fff"
+            android:drawableLeft="@drawable/ic_action_name"
+            android:drawableStart="@drawable/ic_action_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aa@123456" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:text="Đăng nhập"
+        android:textColor="#71dad1"
+        android:textAllCaps="false"
+        android:clickable="true"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:layout_marginTop="80dp"
+        android:textSize="18sp"/>
+
+
+</LinearLayout>
